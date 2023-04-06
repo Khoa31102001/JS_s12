@@ -1,18 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="build/tailwind.css">
-  <link rel="stylesheet" href="build/tailwind-two.css">
-  <link rel="stylesheet" href="assets/css/main.css">
-  <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
-  <script defer src="js/list.js"></script>
-  <title>Document</title>
-</head>
-<body>
-    <table class="border-4 border-black  h-[12.5rem] w-[30rem] text-center">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="build/tailwind.css" />
+    <link rel="stylesheet" href="build/tailwind-two.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter"
+      rel="stylesheet"
+    />
+    <script defer src="js/list.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="login w-full max-w-xs absolute">
+      <form
+        class="login-form bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 border-2 border-black"
+      >
+        <div class="mb-4 flex">
+          <label
+            class="flex items-center text-gray-700 text-sm font-bold mr-1 min-w-[5rem]"
+            for="name"
+          >
+            Name
+          </label>
+          <input
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            name="name"
+            type="text"
+            placeholder="Name"
+          />
+        </div>
+        <div class="mb-6 flex">
+          <label
+            class="flex items-center text-gray-700 text-sm font-bold mr-2 min-w-[5rem]"
+            for="password"
+          >
+            Password
+          </label>
+          <input
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+            name="password"
+            type="password"
+            placeholder="******************"
+          />
+        </div>
+        <div class="flex items-center justify-center">
+          <button
+            class="bg-black text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            type="submit"
+          >
+            Login
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <div class="logout bg-black text-white px-5 py-1 rounded-2xl absolute top-[5%] right-[5%] hidden cursor-pointer">
+      Logout
+    </div>
+
+    <table class="border-4 border-black h-[12.5rem] w-[30rem] text-center">
       <thead>
         <tr class="text-[0.75rem]">
           <th class="border border-slate-300 uppercase p-4">id</th>
@@ -23,24 +73,24 @@
       </thead>
       <tbody>
         <tr class="text-[0.75rem]">
-          <td class="border border-slate-300 ">7a6893</td>
-          <td class="border border-slate-300 ">Johnny</td>
-          <td class="border border-slate-300 ">01/01/1999</td>
-          <td class="border border-slate-300 ">090-056-7890</td>
+          <td class="border border-slate-300">7a6893</td>
+          <td class="border border-slate-300">Johnny</td>
+          <td class="border border-slate-300">01/01/1999</td>
+          <td class="border border-slate-300">090-056-7890</td>
         </tr>
         <tr class="text-[0.75rem]">
-          <td class="border border-slate-300 ">6y7u90</td>
-          <td class="border border-slate-300 ">Blake</td>
-          <td class="border border-slate-300 ">01/01/1998</td>
-          <td class="border border-slate-300 ">090-056-1234</td>
+          <td class="border border-slate-300">6y7u90</td>
+          <td class="border border-slate-300">Blake</td>
+          <td class="border border-slate-300">01/01/1998</td>
+          <td class="border border-slate-300">090-056-1234</td>
         </tr>
         <tr class="text-[0.75rem]">
-          <td class="border border-slate-300 ">4re5t6</td>
-          <td class="border border-slate-300 ">Lily</td>
-          <td class="border border-slate-300 ">01/01/2000</td>
-          <td class="border border-slate-300 ">090-056-3456</td>
+          <td class="border border-slate-300">4re5t6</td>
+          <td class="border border-slate-300">Lily</td>
+          <td class="border border-slate-300">01/01/2000</td>
+          <td class="border border-slate-300">090-056-3456</td>
         </tr>
       </tbody>
     </table>
-</body>
+  </body>
 </html>
